@@ -1,0 +1,1 @@
+export const prefix:string = import.meta.env.VITE_PREFIX as string

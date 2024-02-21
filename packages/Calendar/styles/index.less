@@ -1,0 +1,106 @@
+.calendar {
+    width: 100%;
+    height: 100%;
+
+    &-header {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+        &-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        &-extra {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            cursor: pointer;
+
+            &-btn {
+                cursor: pointer;
+                transition: all ease .3s;
+
+                &:active {
+                    background-color: rgba(0, 0, 0, .3);
+                }
+            }
+        }
+    }
+
+    &-content {
+        height: calc(100% - 60px);
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            height: 100%;
+
+            thead {
+                border-bottom: 1px solid #ebeef5;
+                border-right: 1px solid #ebeef5;
+               
+                width: 100%;
+                box-sizing: border-box;
+                position: sticky;
+                top: 0;
+                background-color: #f1f1f1;
+                tr {
+                    th {
+                        padding: 10px 0;
+                        font-weight: normal;
+                        text-align: right;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            tbody {
+                width: 100%;
+                overflow-y: auto;
+                tr {
+                    td {
+                        cursor: pointer;
+                        font-size: 16px;
+                        border-bottom: 1px solid #ebeef5;
+                        border-right: 1px solid #ebeef5;
+                        text-align: right;
+                        padding: 10px;
+                        vertical-align: top;
+                        position: relative;
+                    }
+
+                    .disabled {
+                        background-color: #ebeef5;
+                        cursor: unset;
+                        color: #ccc;
+                    }
+
+                    .active {
+                        background-color: #ff0000;
+                        color: white;
+
+                        box-sizing: border-box;
+                        width: 40px;
+                        height: 40px;
+                        display: inline-block;
+                        justify-content: center;
+                        align-items: center;
+                        vertical-align: middle;
+                        text-align: center;
+                        border-radius: 100%;
+                        vertical-align: middle;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+        &-day{
+            &-content{
+                width: 100%;
+            }
+        }
+    }
+}
