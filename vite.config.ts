@@ -24,7 +24,7 @@ export default defineConfig({
         cssTarget: 'chrome61',
         lib: {
             entry: resolve('packages/index.ts'),
-            name: 'eric-ui',
+            name: 'eric-components',
             fileName: 'eric-packages',
         },
         rollupOptions: {

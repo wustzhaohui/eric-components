@@ -163,7 +163,7 @@ const Calendar: FC<CalendarProps> = ({
         setDate(dayjs(_date).add(1, 'M').format(format));
         nextMonthClick && nextMonthClick(event, dayjs(_date).add(1, 'M'));
     };
-    const _dayClick = (event: MouseEvent<Element>, data) => {
+    const _dayClick = (event: MouseEvent<Element>, data: DayProps) => {
         dayClick && dayClick(event, data)
     };
     return (

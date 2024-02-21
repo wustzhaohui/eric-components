@@ -1,8 +1,23 @@
 {
   "name": "eric-components",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.2",
   "type": "module",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/eric-packages.umd.cjs",
+  "module": "./lib/eric-packages.js",
+  "typings": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/eric-packages.js",
+      "require": "./lib/eric-packages.umd.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -32,5 +47,9 @@
     "less": "^4.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wustzhaohui/eric-components.git"
   }
 }
