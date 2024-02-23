@@ -24,3 +24,7 @@ interface DayContentProps {
 }
 ```
 - Icon
+```
+// icon组件
+[可备选图标](https://www.iconfont.cn/manage/index?manage_type=myprojects&spm=a313x.7781069.1998910419.10.5lH6JG&projectId=4438865)
+```
