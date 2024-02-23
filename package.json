@@ -1,6 +1,7 @@
 {
   "name": "eric-components",
   "version": "1.0.4",
+  "license": "MIT",
   "type": "module",
   "files": [
     "lib"
