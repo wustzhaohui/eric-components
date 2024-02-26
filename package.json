@@ -1,6 +1,6 @@
 {
   "name": "eric-components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "type": "module",
   "files": [
@@ -53,5 +53,10 @@
     "type": "git",
     "url": "git@github.com:wustzhaohui/eric-components.git"
   },
-  "keywords": ["components", "Drag", "React" ,"Typescript"]
+  "keywords": [
+    "components",
+    "Drag",
+    "React",
+    "Typescript"
+  ]
 }
