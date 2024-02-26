@@ -52,5 +52,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:wustzhaohui/eric-components.git"
-  }
+  },
+  "keywords": ["components", "Drag", "React" ,"Typescript"]
 }

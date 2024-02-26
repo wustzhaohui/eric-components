@@ -42,6 +42,14 @@ npm install
 npm run dev
 ```
 
-Open your browser and visit [http://127.0.0.1:3956](http://127.0.0.1:3956/) .
+Open your browser and visit [http://127.0.0.1:3956](http://127.0.0.1:3956/).
 
-## 
+## 👣 Components Progress
+
+- Icon ✅
+- Calendar ✅
+- Drag ✅
+- Space ✅
+
+## 🧐 By the way
+This project is coding by myself. I would not code all the components than others,like [antd](https://github.com/ant-design/ant-design?tab=readme-ov-file).I just code coponents what i would use next project.You can also tell me your demand.I will code if time enough.
