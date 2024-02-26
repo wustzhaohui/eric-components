@@ -1,10 +1,8 @@
-<img src="./79C31969-626F-4379-91FE-6759913EEEC7.jpeg" alt="Logo" style="zoom:30%;" />
+<img src="./79C31969-626F-4379-91FE-6759913EEEC7.jpeg" alt="Logo" width="100px" />
 
 <center><h1>Eric components</h1></center>	
 
 <center>Component encapsulation used in Eric's work. React UI library.</center>
-
-
 
 ## ✨ Features
 Construction
