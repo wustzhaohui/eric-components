@@ -26,7 +26,7 @@ const Drag: FC<DragProps> = ({ className, children, onDrag }) => {
     const handleDragover = (e: React.DragEvent) => {
         e.preventDefault();
     };
-    const handleDragend = (e: React.DragEvent) => {
+    const handleDragend = (_e: React.DragEvent) => {
         currentDom.current?.classList.remove('moving');
         if (!dragContainer.current || !currentDom.current) return;
         let liArray = Array.from(dragContainer.current.childNodes);
