@@ -68,11 +68,12 @@ const Drag: FC<DragProps> = ({ className, children, onDrag }) => {
             onDragEnd={handleDragend}
             onDragEnter={handleDragEnter}
         >
-            {React.Children.map(children, (child: React.ReactElement) => {
+            {React.Children.map(children, (child: React.ReactElement, index: number) => {
                 if (React.isValidElement(child)) {
                     return React.cloneElement(child as React.ReactElement, {
                         draggable: true,
                         onDragStart: handleDragStart,
+                        key: index
                     });
                 }
                 return child;

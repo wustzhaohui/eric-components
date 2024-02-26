@@ -1,19 +1,27 @@
 import { createRoot } from 'react-dom/client';
-import { Drag } from '../../packages';
+import { Space } from '../../packages';
 const container = document.getElementById('root');
 const root = createRoot(container as Element | DocumentFragment);
 const App = () => {
-    const onDrag = (currentIndex:number, beforeIndex:number) => {
-        console.log('当前移动完成dom的索引', currentIndex)
-        console.log('当前移动前dom的索引', beforeIndex)
-    }
-    return <Drag onDrag={onDrag}>
-    {
-        [1,2,3,4,5,6,7].map((item: number) => <div key={item} style={{
-            backgroundColor: `rgba(255,255,255,.${item})`,
-            height: 100
-        }}>{item}</div>)
-    }
-</Drag>
+    return (
+        <Space>
+            <div
+                style={{
+                    background: 'rgba(255,34,56,.5)',
+                }}
+                className='111'
+            >
+                第一个元素
+            </div>
+            <div
+                style={{
+                    width: 100,
+                    background: 'rgba(255,34,56,.8)',
+                }}
+            >
+                第二个元素cdbnskjdfns,nf,mdsnmfndsmfnmdsnm
+            </div>
+        </Space>
+    );
 };
 root.render(<App />);
