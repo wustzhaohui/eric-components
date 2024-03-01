@@ -1,4 +1,4 @@
-<img src="./79C31969-626F-4379-91FE-6759913EEEC7.jpeg" alt="Logo" width="100px" />
+<img src="./79C31969-626F-4379-91FE-6759913EEEC7.jpeg" alt="Logo" width="180px" />
 
 <center><h1>Eric components</h1></center>	
 

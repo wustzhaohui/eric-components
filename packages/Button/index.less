@@ -1,0 +1,105 @@
+.btn{
+    outline: none;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    background: transparent;
+    text-align: center;
+    font-weight: @fontWeight;
+    font-size: @contentFontSize;
+    border-color: @borderColor;
+    border-width: 1px;
+    border-style: solid;
+    color: @textColor;
+    user-select: none;
+    touch-action: manipulation;
+    padding: 4px 15px;
+    border-radius: @radius;
+    &-block{
+        display: inline-block;
+        width: 100%;
+    }
+    &-primary{
+        background: @button-primary-bg;
+        color: @button-primary-color;
+        box-shadow: @button-primary-shadow;
+        border-color: @button-primary-bg;
+        &:active{
+            background: @primaryActive;
+            border-color: @primaryActive;
+        }
+        &:hover{
+            background:@primaryHover;
+            border-color:@primaryHover;
+        }
+
+    }
+    &-default{
+        &:active{
+            color: @primaryActive;
+            border-color: @primaryActive;
+        }
+        &:hover{
+            color:@primaryHover;
+            border-color:@primaryHover;
+        }
+    }
+    &-dashed{
+        border-style: dotted;
+        &:active{
+            color: @primaryActive;
+            border-color: @primaryActive;
+        }
+        &:hover{
+            color:@primaryHover;
+            border-color:@primaryHover;
+        }
+    }
+    &-text{
+        border-color: transparent;
+        &:active{
+            border-color: transparent;
+            background-color: @button-text-active-bg;
+        }
+        &:hover{
+            border-color:transparent;
+            background-color: @button-text-bg;
+        }
+    }
+    &-danger{
+        border-color: @errorColor;
+        color: @errorColor;
+        &:active{
+            color: @errorColorActive;
+            border-color: @errorColorActive;
+        }
+        &:hover{
+            border-color:@errorColorHover;
+            color: @errorColorHover;
+        }
+    }
+    &-link{
+        border: transparent;
+        color: @linkColor;
+        border-color: transparent;
+        &:active{
+            color: @primaryActive;
+            border-color: transparent;
+        }
+        &:hover{
+            color:@primaryHover;
+            border-color: transparent;
+        }
+    }
+    &-disabled{
+        cursor: not-allowed;
+        color: @textDisabledColor;
+        &:active{
+            color: @textDisabledColor;
+            // border-color: transparent;
+        }
+        &:hover{
+            color:@textDisabledColor;
+        }
+    }
+}

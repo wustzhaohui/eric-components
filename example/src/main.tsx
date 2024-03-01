@@ -1,26 +1,17 @@
 import { createRoot } from 'react-dom/client';
-import { Space } from '../../packages';
+import { Button, Space } from '../../packages';
 const container = document.getElementById('root');
 const root = createRoot(container as Element | DocumentFragment);
 const App = () => {
     return (
         <Space>
-            <div
-                style={{
-                    background: 'rgba(255,34,56,.5)',
-                }}
-                className='111'
-            >
-                第一个元素
-            </div>
-            <div
-                style={{
-                    width: 100,
-                    background: 'rgba(255,34,56,.8)',
-                }}
-            >
-                第二个元素cdbnskjdfns,nf,mdsnmfndsmfnmdsnm
-            </div>
+            <Button type='default'>default Button</Button>
+            <Button type='primary'>Primary Button</Button>
+            <Button type='dashed'>dashed Button</Button>
+            <Button type='text'>text Button</Button>
+            <Button danger>danger Button</Button>
+            <Button type='link'>link Button</Button>
+            <Button disabled>disabled Button</Button>
         </Space>
     );
 };

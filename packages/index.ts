@@ -12,3 +12,7 @@ export { default as DragProps } from './Drag';
 // Space
 export { default as Space } from './Space';
 export { default as SpaceProps } from './Space';
+
+// Button
+export { default as Button } from './Button';
+export { default as ButtonProps } from './Button';
