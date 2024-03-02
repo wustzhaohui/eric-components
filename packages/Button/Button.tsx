@@ -32,7 +32,7 @@ const Button: FC<ButtonProps> = ({
     htmlType,
     icon,
     shape,
-    size = 'small',
+    size = 'middle',
     style,
     target,
 }) => {
@@ -57,7 +57,7 @@ const Button: FC<ButtonProps> = ({
                 disabled ? 'disabled' : ''
             } btn-${ghost ? 'ghost' : ''} btn-${
                 shape ? shape : ''
-            } btn-${size} cursor-pointer transition`}
+            } btn-${size} btn-${disabled ? 'disabled' : ''} cursor-pointer transition`}
             disabled={disabled}
             type={htmlType}
             onClick={onClick}

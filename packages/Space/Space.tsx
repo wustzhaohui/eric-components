@@ -4,8 +4,8 @@ import { FC } from 'react';
 export interface SpaceProps {
     className?: string;
     children?: React.ReactElement | Element | any;
-    align?: 'start | end |center | baseline ';
-    direction?: 'vertical | horizontal';
+    align?: 'start' | 'end' |'center' | 'baseline';
+    direction?: 'vertical' | 'horizontal';
     gap?: number;
     wrap?: boolean;
 }
@@ -13,7 +13,7 @@ export interface SpaceProps {
 const Space: FC<SpaceProps> = ({
     className,
     children,
-    align = 'center',
+    align = 'start',
     direction = 'horizontal',
     gap,
     wrap,

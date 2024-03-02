@@ -15,6 +15,13 @@
     touch-action: manipulation;
     padding: 4px 15px;
     border-radius: @radius;
+    &-small{
+        padding: 2px 10px;
+    }
+    &-large{
+        padding: 8px 24px;
+        font-size: 16px;
+    }
     &-block{
         display: inline-block;
         width: 100%;
@@ -32,6 +39,20 @@
             background:@primaryHover;
             border-color:@primaryHover;
         }
+        &[disabled]{
+            cursor: not-allowed;
+            color: @textDisabledColor;
+            background: @button-primary-disabled-bg;
+            border-color: @textDisabledColor;
+            &:active{
+                color: @textDisabledColor;
+                border-color: @textDisabledColor;
+            }
+            &:hover{
+                color:@textDisabledColor;
+                border-color:@textDisabledColor;
+            }
+        }
 
     }
     &-default{
@@ -42,6 +63,18 @@
         &:hover{
             color:@primaryHover;
             border-color:@primaryHover;
+        }
+        &[disabled]{
+            cursor: not-allowed;
+            color: @textDisabledColor;
+            &:active{
+                color: @textDisabledColor;
+                border-color: @textDisabledColor;
+            }
+            &:hover{
+                color:@textDisabledColor;
+                border-color:@textDisabledColor;
+            }
         }
     }
     &-dashed{
@@ -54,6 +87,18 @@
             color:@primaryHover;
             border-color:@primaryHover;
         }
+        &[disabled]{
+            cursor: not-allowed;
+            color: @textDisabledColor;
+            &:active{
+                color: @textDisabledColor;
+                border-color: @textDisabledColor;
+            }
+            &:hover{
+                color:@textDisabledColor;
+                border-color:@textDisabledColor;
+            }
+        }
     }
     &-text{
         border-color: transparent;
@@ -64,6 +109,18 @@
         &:hover{
             border-color:transparent;
             background-color: @button-text-bg;
+        }
+        &[disabled]{
+            cursor: not-allowed;
+            color: @textDisabledColor;
+            &:active{
+                border-color: transparent;
+                background-color: @button-text-bg;
+            }
+            &:hover{
+                border-color:transparent;
+                background-color: @button-text-bg;
+            }
         }
     }
     &-danger{
@@ -77,6 +134,10 @@
             border-color:@errorColorHover;
             color: @errorColorHover;
         }
+        &[disabled]{
+            border-color: @textDisabledColor;
+            border-color: @textDisabledColor;
+        }
     }
     &-link{
         border: transparent;
@@ -84,22 +145,27 @@
         border-color: transparent;
         &:active{
             color: @primaryActive;
-            border-color: transparent;
+            border-color: transparent;  
         }
         &:hover{
             color:@primaryHover;
             border-color: transparent;
         }
-    }
-    &-disabled{
-        cursor: not-allowed;
-        color: @textDisabledColor;
-        &:active{
+        &[disabled]{
             color: @textDisabledColor;
-            // border-color: transparent;
-        }
-        &:hover{
-            color:@textDisabledColor;
+            &:active{
+                border-color: transparent;
+                background-color: @button-text-bg;
+            }
+            &:hover{
+                border-color:transparent;
+                background-color: @button-text-bg;
+            }
         }
     }
+    &-ghost{
+        background: transparent;
+        border:transparent
+    }
+
 }
