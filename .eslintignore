@@ -4,3 +4,5 @@ package-lock.json
 .gitignore
 README.md
 .eslintrc
+packages/assets/*
+lib/*

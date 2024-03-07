@@ -55,7 +55,7 @@ const Button: FC<ButtonProps> = ({
                 block ? 'block' : ''
             } btn-${danger ? 'danger' : ''} btn-${
                 disabled ? 'disabled' : ''
-            } btn-${ghost ? 'ghost' : ''} btn-${
+            } btn-${ghost ? 'ghost' : ''} btn-shape-${
                 shape ? shape : ''
             } btn-${size} btn-${disabled ? 'disabled' : ''} cursor-pointer transition`}
             disabled={disabled}
