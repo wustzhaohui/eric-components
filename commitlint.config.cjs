@@ -1,11 +1,3 @@
-/*
- * @Author: zhaohui
- * @Date: 2021-09-16 15:58:57
- * @LastEditTime: 2021-09-18 10:06:21
- * @LastEditors: zhaohui
- * @Description:
- * @FilePath: /xingyuan/platform/web/commitlint.config.js
- */
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
