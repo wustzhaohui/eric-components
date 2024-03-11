@@ -19,6 +19,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           node-version: 18.x
+      - run: git config user.email "little_hui@foxmail.com"
+      - run: git config user.name "eric chao"
       - run: npm ci
       - run: npm run build
 
