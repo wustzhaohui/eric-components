@@ -4,10 +4,11 @@
 name: Publish Package to npmjs
 
 on:
-    push:
-        branches: [ main ]
-        tags:
-          - '**'
+    # push:
+    #     branches: [ main ]
+    #     tags:
+    #       - '**'
+    workflow_dispatch:
 
 jobs:
   build:
