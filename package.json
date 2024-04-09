@@ -1,81 +1,86 @@
 {
-  "name": "eric-components",
-  "version": "1.0.10",
-  "license": "MIT",
-  "type": "module",
-  "files": [
-    "lib"
-  ],
-  "main": "./lib/eric-packages.umd.cjs",
-  "module": "./lib/eric-packages.js",
-  "typings": "./lib/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./lib/eric-packages.js",
-      "require": "./lib/eric-packages.umd.cjs"
+    "name": "eric-components",
+    "version": "1.0.11",
+    "license": "MIT",
+    "type": "module",
+    "files": [
+        "lib"
+    ],
+    "main": "./lib/eric-packages.umd.cjs",
+    "module": "./lib/eric-packages.js",
+    "typings": "./lib/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./lib/index.d.ts",
+            "import": "./lib/eric-packages.js",
+            "require": "./lib/eric-packages.umd.cjs"
+        },
+        "./lib/style.css": {
+            "import": "./lib/style.css",
+            "require": "./lib/style.css"
+        }
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build && standard-version",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview",
+        "prepare": "husky install",
+        "postinstall": "husky install",
+        "pre-commit": "lint-staged"
+    },
+    "dependencies": {
+        "dayjs": "^1.11.10",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.0.3",
+        "@commitlint/config-conventional": "^19.0.3",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/node": "^20.11.19",
+        "@types/react": "^18.2.55",
+        "@types/react-dom": "^18.2.19",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "@vitejs/plugin-react": "^4.2.1",
+        "eslint": "^8.56.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react-refresh": "^0.4.5",
+        "husky": "^8.0.0",
+        "less": "^4.2.0",
+        "lint-staged": "^15.2.2",
+        "standard-version": "^9.5.0",
+        "typescript": "^5.2.2",
+        "vite": "^5.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:wustzhaohui/eric-components.git"
+    },
+    "keywords": [
+        "components",
+        "Drag",
+        "React",
+        "Typescript"
+    ],
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "npm run lint",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
     }
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build && standard-version",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "prepare": "husky install",
-    "postinstall": "husky install",
-    "pre-commit": "lint-staged"
-  },
-  "dependencies": {
-    "dayjs": "^1.11.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.0.3",
-    "@commitlint/config-conventional": "^19.0.3",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "husky": "^8.0.0",
-    "less": "^4.2.0",
-    "lint-staged": "^15.2.2",
-    "standard-version": "^9.5.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:wustzhaohui/eric-components.git"
-  },
-  "keywords": [
-    "components",
-    "Drag",
-    "React",
-    "Typescript"
-  ],
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "npm run lint",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  }
 }
