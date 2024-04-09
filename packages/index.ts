@@ -1,5 +1,3 @@
-// add global less
-// import '@/assets/styles/base.less'
 // Calendar
 export { default as Calendar } from './Calendar';
 export type { CalendarProps } from './Calendar';
