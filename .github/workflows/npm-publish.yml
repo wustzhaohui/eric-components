@@ -24,16 +24,14 @@ jobs:
           
       - name: Build
         run: |
-        npm ci
-        npm run build
+         npm ci
+         npm run build
 
-      - name: Generate Changelog
-        run: npm run release
-
-      - name: Create tag and push to Git
+      - name: Generate Changelog and Create tag and push to Git
         run: |
-        git config user.email "little_hui@foxmail.com"
-        git config user.name "eric_chao"
-        git push --follow-tags origin main
+         git config user.email "little_hui@foxmail.com"
+         git config user.name "eric_chao"
+         npm run release
+         git push --follow-tags origin main
       - name: Publish To NPM
         run: npm publish
