@@ -21,8 +21,19 @@ jobs:
           registry-url: https://registry.npmjs.org/
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      - run: git config user.email "little_hui@foxmail.com"
-      - run: git config user.name "robot"
-      - run: npm ci
-      - run: npm run build
-      - run: npm publish
+          
+      - name: Build
+        run: |
+        npm ci
+        npm run build
+
+      - name: Generate Changelog
+        run: npm run release
+
+      - name: Create tag and push to Git
+        run: |
+        git config user.email "little_hui@foxmail.com"
+        git config user.name "eric_chao"
+        git push --follow-tags origin main
+      - name: Publish To NPM
+        run: npm publish
