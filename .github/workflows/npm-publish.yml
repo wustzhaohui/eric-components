@@ -26,8 +26,8 @@ jobs:
         run: |
          npm ci
          npm run build
-
-      - name: Generate Changelog and Create tag and push to Git
+         
+      - name: Create tag and push to Git
         run: |
          git config user.email "little_hui@foxmail.com"
          git config user.name "eric_chao"
