@@ -26,7 +26,8 @@
     },
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build && standard-version",
+        "build": "tsc && vite build",
+        "release": "standard-version",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
         "pre-commit": "lint-staged"
