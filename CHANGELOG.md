@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.13](https://github.com/wustzhaohui/eric-components/compare/v1.0.12...v1.0.13) (2024-04-10)
+
+
+### Bug Fixes
+
+* rm double import less ([#4](https://github.com/wustzhaohui/eric-components/issues/4)) ([dfc39be](https://github.com/wustzhaohui/eric-components/commit/dfc39beb3393969d55aed52336542c406ec334da))
+
 ### [1.0.11](https://github.com/wustzhaohui/eric-components/compare/v1.0.10...v1.0.11) (2024-04-09)
 
 ### [1.0.10](https://github.com/wustzhaohui/eric-components/compare/v1.0.9...v1.0.10) (2024-03-11)
